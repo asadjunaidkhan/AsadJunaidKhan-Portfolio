@@ -9,7 +9,7 @@ const NAV_ITEMS = [
     href: 'https://github.com/asadjunaidkhan',
     external: true,
   },
-  { label: 'UI/UX designs', href: '#ui-ux-wireframes' },
+  { label: 'UI/UX designs', href: '#ui-ux' },
   { label: 'Full Stack development' },
   { label: 'AI/ML' },
 ];

@@ -24,7 +24,7 @@ export default function About() {
 
         <div className="max-w-3xl mx-auto leading-[0.95] sm:leading-[0.9]">
           <WordsPullUpMultiStyle
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
+            className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
             segments={[
               { text: 'I am Asad Junaid,', className: 'font-normal' },
               { text: 'a full-stack developer.', className: 'italic font-serif' },
