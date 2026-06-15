@@ -39,7 +39,7 @@ export default function Navbar() {
             ) : (
               <span
                 className="text-[9px] sm:text-[11px] md:text-sm whitespace-nowrap cursor-default"
-                style={{ color: 'rgba(225, 224, 204, 0.4)' }}
+                style={{ color: 'rgba(225, 224, 204, 0.8)' }}
               >
                 {item.label}
               </span>

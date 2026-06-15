@@ -83,7 +83,7 @@ export default function Features() {
                   Education.
                 </h3>
                 <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
-                  <strong>BS Computer Science</strong> from FAST National University. Specialized in software engineering and algorithms.
+                  <strong>BS Computer Science</strong> from FAST National University. Specialized in Full-Stack Development, Artificial Intelligence & Machine Learning.
                 </p>
               </div>
             </div>
