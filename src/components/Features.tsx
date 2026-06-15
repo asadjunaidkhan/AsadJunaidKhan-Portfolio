@@ -1,6 +1,6 @@
 import { useRef, type ReactNode } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { ArrowRight, Award } from 'lucide-react';
+import { ArrowRight, Award, Briefcase, GraduationCap } from 'lucide-react';
 import WordsPullUpMultiStyle from './WordsPullUpMultiStyle';
 
 interface CardShellProps {
@@ -45,20 +45,19 @@ export default function Features() {
           />
         </div>
 
-        <CardShell index={0} className="bg-[#161616] p-5 sm:p-6 md:p-8">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-            <div className="flex items-start gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-2 md:gap-1 mb-3 sm:mb-2 md:mb-1">
+          {/* Card 1: Experience */}
+          <CardShell index={0} className="bg-[#161616] p-5 sm:p-6 md:p-8 flex flex-col justify-between h-full min-h-[220px]">
+            <div className="flex flex-col gap-4">
               <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-md sm:rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0">
-                <Award className="w-5 h-5 sm:w-6 sm:h-6" />
+                <Briefcase className="w-5 h-5 sm:w-6 sm:h-6" />
               </div>
               <div>
-                <h3 className="text-primary text-lg sm:text-xl md:text-2xl font-normal mb-2">
-                  Experience, education, and recognition.
+                <h3 className="text-primary text-base sm:text-lg font-normal mb-2">
+                  Experience.
                 </h3>
-                <p className="text-gray-400 text-xs sm:text-sm md:text-base max-w-3xl leading-relaxed">
-                  App/Web Developer Intern at Stellar Clique, BS Computer Science at FAST
-                  National University, 1st Position in PseudoWars 2023, and 3rd Position in
-                  PseudoWars 2024.
+                <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
+                  <strong>App/Web Developer Intern</strong> at Stellar Clique. Built full-stack web products and mobile features.
                 </p>
               </div>
             </div>
@@ -66,17 +65,51 @@ export default function Features() {
               href="https://www.linkedin.com/in/asad-junaid-1aa9882bb/"
               target="_blank"
               rel="noreferrer"
-              className="group inline-flex items-center gap-2 text-primary text-xs sm:text-sm font-medium w-fit shrink-0"
+              className="group inline-flex items-center gap-2 text-primary text-xs sm:text-sm font-medium w-fit shrink-0 mt-4"
             >
               Open LinkedIn
               <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" style={{ transform: 'rotate(-45deg)' }} />
             </a>
-          </div>
-        </CardShell>
+          </CardShell>
+
+          {/* Card 2: Education */}
+          <CardShell index={1} className="bg-[#161616] p-5 sm:p-6 md:p-8 flex flex-col justify-between h-full min-h-[220px]">
+            <div className="flex flex-col gap-4">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-md sm:rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                <GraduationCap className="w-5 h-5 sm:w-6 sm:h-6" />
+              </div>
+              <div>
+                <h3 className="text-primary text-base sm:text-lg font-normal mb-2">
+                  Education.
+                </h3>
+                <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
+                  <strong>BS Computer Science</strong> from FAST National University. Specialized in software engineering and algorithms.
+                </p>
+              </div>
+            </div>
+          </CardShell>
+
+          {/* Card 3: Certifications & Recognition */}
+          <CardShell index={2} className="bg-[#161616] p-5 sm:p-6 md:p-8 flex flex-col justify-between h-full min-h-[220px]">
+            <div className="flex flex-col gap-4">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-md sm:rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                <Award className="w-5 h-5 sm:w-6 sm:h-6" />
+              </div>
+              <div>
+                <h3 className="text-primary text-base sm:text-lg font-normal mb-2">
+                  Certifications & Awards.
+                </h3>
+                <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
+                  Achieved <strong>1st Position</strong> in PseudoWars 2023 and <strong>3rd Position</strong> in PseudoWars 2024.
+                </p>
+              </div>
+            </div>
+          </CardShell>
+        </div>
 
         <CardShell
           id="ui-ux-wireframes"
-          index={1}
+          index={3}
           className="mt-3 sm:mt-2 md:mt-1 bg-[#101010] p-4 sm:p-5 md:p-6 scroll-mt-24"
         >
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-5">

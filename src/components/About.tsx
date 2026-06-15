@@ -4,7 +4,7 @@ import WordsPullUpMultiStyle from './WordsPullUpMultiStyle';
 import AnimatedLetter from './AnimatedLetter';
 
 const BODY_TEXT =
-  'I combine technical execution with strong teamwork, communication, and strategic decision-making shaped by competitive futsal, coaching, volunteer work, and project-driven computer science training.';
+  'Computer Science student from FAST NUCES | Passionate about Creative Problem Solving | Full-Stack Development (Web & App) | Machine Learning & Intelligent Systems | Creative in UI/UX design for web and mobile applications | Proficient in arts and design projects | Strong knowledge of modern futsal, including tactical formations, systems, and planning.';
 
 export default function About() {
   const paragraphRef = useRef(null);
